@@ -1,4 +1,4 @@
-# btc-price-watch
+# btc-price-watch :chart:
 
 ## welcome to [my](https://github.com/taeyangcode) project, **bitcoin-price-watch**
 
