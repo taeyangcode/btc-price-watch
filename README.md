@@ -1,6 +1,6 @@
 # btc-price-watch
 
-## welcome to [my](https://github.com/taeyangcode) project, **bitcoin-price-water**
+## welcome to [my](https://github.com/taeyangcode) project, **bitcoin-price-watch**
 
 ### purpose:
 this is my first time messing around with any sort of web scraping and more specifically `Jsoup`
