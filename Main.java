@@ -1,6 +1,5 @@
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.text.SimpleDateFormat;
@@ -18,16 +17,16 @@ public class Main {
     }
 
     public void printBTCPrice() throws IOException {
-        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-        Date date = new Date();
-
         Runnable bitcoinPriceRunnable = new Runnable() {
             @Override
             public void run() {
+                SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+                Date date = new Date();
                 Document doc = null;
                 try {
                     doc = Jsoup.connect("https://cryptowat.ch/").get();
-                } catch (IOException e) {
+                }
+                catch (IOException e) {
                     e.printStackTrace();
                 }
                 Elements bitcoinPrice = doc.select("a[href=/assets/btc/usd/chart] > div > span._3XNm6CSrchU-MNbu1Zh3m2");
